@@ -1,10 +1,13 @@
 # cpp_server
 
 This code is using the library `https://github.com/eidheim/Simple-Web-Server`. 
-You don't need to install anything because I copied the required file in `lib` folder.
+This library is copied in `lib` folder.
+However, you have to still the boost library, specially the `asia` component. 
+If you are using a mac with hombrew you can do it by running: 
+`brew install boost`
 
 ### Compilation 
-`g++ -std=c++11 server.cpp -o server`
+`g++ -std=c++11 server.cpp -o server -I/usr/local/include`
 
 ### Running
 `./server`
